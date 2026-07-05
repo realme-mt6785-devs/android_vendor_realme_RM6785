@@ -116,6 +116,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/odm/etc/audio/sixth/sixth_param_voip.txt:$(TARGET_COPY_OUT_ODM)/etc/audio/sixth/sixth_param_voip.txt \
     vendor/realme/RM6785/proprietary/odm/etc/audio/test_path/common/mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/test_path/common/mixer_paths.xml \
     vendor/realme/RM6785/proprietary/odm/etc/audio/test_path/mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/test_path/mixer_paths.xml \
+    vendor/realme/RM6785/proprietary/odm/etc/camera/stereoParams.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/stereoParams.bin \
     vendor/realme/RM6785/proprietary/odm/etc/init/init.pn8x.nfc.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.pn8x.nfc.rc \
     vendor/realme/RM6785/proprietary/odm/etc/init/init.pn8x.se.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.pn8x.se.rc \
     vendor/realme/RM6785/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
@@ -168,6 +169,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/odm/vendor/app/mcRegistry/09070000000000000000000000000000.drbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/09070000000000000000000000000000.drbin \
     vendor/realme/RM6785/proprietary/odm/vendor/app/mcRegistry/09080000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/09080000000000000000000000000000.tlbin \
     vendor/realme/RM6785/proprietary/odm/vendor/app/mcRegistry/09150000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/09150000000000000000000000000000.tlbin \
+    vendor/realme/RM6785/proprietary/system/priv-app/OppoCamera/oat/arm/OppoCamera.odex:$(TARGET_COPY_OUT_SYSTEM)/priv-app/OppoCamera/oat/arm/OppoCamera.odex \
+    vendor/realme/RM6785/proprietary/system/priv-app/OppoCamera/oat/arm/OppoCamera.vdex:$(TARGET_COPY_OUT_SYSTEM)/priv-app/OppoCamera/oat/arm/OppoCamera.vdex \
     vendor/realme/RM6785/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
     vendor/realme/RM6785/proprietary/vendor/app/mcRegistry/020b0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020b0000000000000000000000000000.drbin \
     vendor/realme/RM6785/proprietary/vendor/app/mcRegistry/020b0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020b0000000000000000000000000000.tlbin \
@@ -219,6 +222,161 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/audio_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy.conf \
     vendor/realme/RM6785/proprietary/vendor/etc/aurisys_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/aurisys_config_hifi3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config_hifi3.xml \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/Arc_wdc_calib.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Arc_wdc_calib.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/M_Attribute_AG_BMW_1.1.0.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/M_Attribute_AG_BMW_1.1.0.model \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/M_Attribute_Gender_Age_1.0.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/M_Attribute_Gender_Age_1.0.model \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/engineer_camera_config:$(TARGET_COPY_OUT_VENDOR)/etc/camera/engineer_camera_config \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/faceBeautyParam/fb_default:$(TARGET_COPY_OUT_VENDOR)/etc/camera/faceBeautyParam/fb_default \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/faceBeautyParam/fb_default_19661:$(TARGET_COPY_OUT_VENDOR)/etc/camera/faceBeautyParam/fb_default_19661 \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/faceBeautyParam/fb_default_20682:$(TARGET_COPY_OUT_VENDOR)/etc/camera/faceBeautyParam/fb_default_20682 \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/000.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/000.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/000_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/000_pre.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/000_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/000_pre.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/001.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/001.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/001_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/001_pre.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/001_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/001_pre.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/002.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/002.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/002_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/002_pre.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/002_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/002_pre.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/003.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/003.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/003_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/003_pre.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/003_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/003_pre.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/010.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/010.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/010_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/010_pre.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/010_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/010_pre.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/011.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/011.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/011_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/011_pre.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/011_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/011_pre.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/012.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/012.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/012_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/012_pre.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/012_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/012_pre.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/013.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/013.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/013_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/013_pre.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/100.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/100.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/100_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/100_pre.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/100_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/100_pre.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/101.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/101.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/101_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/101_pre.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/101_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/101_pre.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/102.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/102.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/102_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/102_pre.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/102_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/102_pre.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/103.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/103.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/103_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/103_pre.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/103_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/103_pre.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/110.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/110.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/110_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/110_pre.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/110_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/110_pre.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/111.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/111.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/111_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/111_pre.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/111_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/111_pre.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/112.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/112.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/112_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/112_pre.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/112_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/112_pre.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/113.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/113.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/113_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/113_pre.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/200.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/200.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/200_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/200_pre.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/200_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/200_pre.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/201.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/201.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/201_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/201_pre.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/201_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/201_pre.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/202.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/202.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/202_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/202_pre.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/202_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/202_pre.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/203.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/203.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/203_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/203_pre.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/203_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/203_pre.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/210.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/210.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/210_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/210_pre.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/210_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/210_pre.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/211.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/211.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/211_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/211_pre.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/211_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/211_pre.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/212.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/212.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/212_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/212_pre.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/212_pre.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/212_pre.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/213.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/213.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/213_pre.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/213_pre.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/PreCalVarBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreCalVarBinary.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/PreHighPassBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreHighPassBinary.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/PreHoriFilterBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreHoriFilterBinary.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/PreMakeupBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreMakeupBinary.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/PreMorphBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreMorphBinary.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/PreNoFaceBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreNoFaceBinary.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/PreNormalBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreNormalBinary.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/PreOnlywhitenBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreOnlywhitenBinary.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/PreSkintuneBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreSkintuneBinary.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/PreSurfaceBlurBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreSurfaceBlurBinary.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/PreVertFilterBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/PreVertFilterBinary.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/eyeBright.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/eyeBright.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/skin_CCT.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skin_CCT.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/skin_back.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skin_back.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/skin_dark.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skin_dark.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/skin_indian.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skin_indian.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/skin_normal.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skin_normal.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/skinmask.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinmask.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/fb_model/skinmask.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fb_model/skinmask.png \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/B1VLf4peM:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/B1VLf4peM \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/B1aMqioxf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/B1aMqioxf \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/B1nmcmWbG:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/B1nmcmWbG \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/B1si_XbZz:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/B1si_XbZz \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/BJJAwoigM:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/BJJAwoigM \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/BJyKIwqxz:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/BJyKIwqxz \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/ByW7g4bbf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/ByW7g4bbf \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/ByYo3If:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/ByYo3If \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/BycYf7WWz:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/BycYf7WWz \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/EyxRbD2UCe:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/EyxRbD2UCe \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/SJ3mbr6ef:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/SJ3mbr6ef \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/SkpZ8ebbz:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/SkpZ8ebbz \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/Sy4uLSTgf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/Sy4uLSTgf \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/Syt2KeZZf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/Syt2KeZZf \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/black_gold.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/black_gold.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/bowu-2.1.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/bowu-2.1.cube.rgb.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/bright_coloured.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/bright_coloured.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/default:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/default \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/f_bin_hideaki:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/f_bin_hideaki \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/f_candy_water_weak.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/f_candy_water_weak.cube.rgb.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/f_contrast_gray_face_dark:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/f_contrast_gray_face_dark \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/f_fuji_strong.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/f_fuji_strong.cube.rgb.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/f_japan_strong.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/f_japan_strong.cube.rgb.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/interstellar_space.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/interstellar_space.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/jiari-2.0.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/jiari-2.0.cube.rgb.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/lvtu-2.0.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/lvtu-2.0.cube.rgb.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/meiwei-2.2.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/meiwei-2.2.cube.rgb.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/neon-2020.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/neon-2020.cube.rgb.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/oppo_video_filter_black_and_white:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/oppo_video_filter_black_and_white \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/oppo_video_filter_highlight:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/oppo_video_filter_highlight \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/oppo_video_filter_ins:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/oppo_video_filter_ins \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/oppo_video_filter_natal:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/oppo_video_filter_natal \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/oppo_video_filter_olympus:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/oppo_video_filter_olympus \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/oppo_video_filter_plain:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/oppo_video_filter_plain \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/oppo_video_filter_show:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/oppo_video_filter_show \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/oppo_video_filter_solar:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/oppo_video_filter_solar \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/oppo_video_filter_strong:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/oppo_video_filter_strong \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/oppo_video_filter_west:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/oppo_video_filter_west \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/p4_1.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/p4_1.cube.rgb.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/p4_2.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/p4_2.cube.rgb.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/p4_3.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/p4_3.cube.rgb.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/p4_4.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/p4_4.cube.rgb.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/qiuri-2.0.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/qiuri-2.0.cube.rgb.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/r1JaFSZZG:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/r1JaFSZZG \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/r1PrfoolG:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/r1PrfoolG \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/rJ5g5vPWG:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/rJ5g5vPWG \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/rJxJtmaez:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/rJxJtmaez \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/realme-black-gold-1.1-RGB.CUBE.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/realme-black-gold-1.1-RGB.CUBE.rgb.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/realme-cyberpunk-RGB.CUBE.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/realme-cyberpunk-RGB.CUBE.rgb.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/realme-infra-RGB.CUBE.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/realme-infra-RGB.CUBE.rgb.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/red-red.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/red-red.cube.rgb.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/rkMhq4ZWf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/rkMhq4ZWf \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/rkx5u4Zbf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/rkx5u4Zbf \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/senlin-2.0.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/senlin-2.0.cube.rgb.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/sky-blue.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/sky-blue.cube.rgb.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/tree-green.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/tree-green.cube.rgb.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/filters_lut/yuanqi-2.2s.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/yuanqi-2.2s.cube.rgb.bin \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/gasryuv.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/gasryuv.model \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/license.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/license.lic \
+    vendor/realme/RM6785/proprietary/vendor/etc/camera/merged_model_post:$(TARGET_COPY_OUT_VENDOR)/etc/camera/merged_model_post \
     vendor/realme/RM6785/proprietary/vendor/etc/default_pd_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/etc/default_pd_calibration.bin \
     vendor/realme/RM6785/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
@@ -378,6 +536,7 @@ PRODUCT_PACKAGES += \
     libgralloc_metadata \
     libgralloctypes_mtk \
     libhdrvideo \
+    libhevce_sb.ca7.android \
     libhwm \
     libhydra \
     libion_mtk \
@@ -407,9 +566,11 @@ PRODUCT_PACKAGES += \
     libsimaka \
     libssl-md \
     libssl-ss \
+    libstagefrighthw \
     libstrongswan \
     libsysenv \
     liburee_meta_drmkeyinstall \
+    libvcodec_oal \
     libverno \
     libvpu \
     libwo \
@@ -472,7 +633,6 @@ PRODUCT_PACKAGES += \
     libh264dec_sd.ca7 \
     libh264dec_se.ca7 \
     libh264enc_sa.ca7 \
-    libhevce_sb.ca7.android \
     libktvdrc \
     libktveffect \
     libktveffect_rec \
@@ -491,12 +651,10 @@ PRODUCT_PACKAGES += \
     libsi_sixth \
     libspeech_enh_lib \
     libspeechparser_vendor \
-    libstagefrighthw \
     libstorage_otp \
     libthermalalgo \
     libthha \
     libvc1dec_sa.ca7 \
-    libvcodec_oal \
     libvcodec_utility \
     libvcodecdrv \
     libvolte_core_shr \
@@ -908,6 +1066,7 @@ PRODUCT_PACKAGES += \
     libFaceBeautyCap \
     libFaceBeautyPre \
     libMcClient \
+    libMegviiHumBokehPost-mtk \
     libPerfectlyClearCrux \
     libPolarrRender \
     libSonyIMX230PdafLibrary \
@@ -919,12 +1078,16 @@ PRODUCT_PACKAGES += \
     libSonyIMX519PdafLibrary \
     libSonyIMX519PdafLibraryWrapper \
     libVDBlurless \
+    libVDDualCameraBlurless \
     libVDPostureDetection \
     libVDSuperPhotoAPI \
     libWaterMark \
     lib_bsscore \
     libaal_cust \
     libaal_key \
+    libacdk \
+    libaf6133 \
+    libaf6133e \
     libakm \
     libapusys \
     libarcsoft_distortion_correction \
@@ -1019,8 +1182,10 @@ PRODUCT_PACKAGES += \
     libkmsetkey \
     libksensor \
     liblpcnr \
+    libmegface_rt_bokeh \
     libmfllcore \
     libml_util \
+    libmmprofile \
     libmpbase \
     libmsnr \
     libmtk-ril \
@@ -1118,6 +1283,8 @@ PRODUCT_PACKAGES += \
     libtlcWidevineModularDrm \
     libudf \
     libutils-v30 \
+    libvtclib \
+    libvtclib_sala1008 \
     libwifitest \
     libwvhidl \
     libwvdrmengine \
@@ -1177,20 +1344,38 @@ PRODUCT_PACKAGES += \
     libsource \
     libvcodec_cap \
     libvcodec_capenc \
+    libvpuapi.mtk \
     libvt_avsync \
     vendor.mediatek.hardware.videotelephony-V1-ndk \
     vendor.mediatek.hardware.videotelephony@1.0 \
+    vendor.mediatek.hardware.vpu@1.0 \
+    vendor.oplus.hardware.camera.slogan@1.0-impl \
+    libRbsFlow \
+    libRbsFlow_cap \
+    libSonyIMX471RmscLibrary \
+    libalipay_factory \
+    libarcsoft_dualcam_wt_calibration \
+    libarcsoft_dualcam_wt_verification \
+    libcalibverifyW_T \
+    libfasteningPlugin \
     liboemcrypto \
     libormshalclient \
     libpnscr2 \
+    libremosaic_wrapper \
+    libremosaiclib \
     sensors.virtual \
     vendor.oplus.hardware.appradio@1.0 \
     vendor.oplus.hardware.biometrics.fingerprint@2.1_odm \
     vendor.oplus.hardware.biometrics.fingerprintservice@1.0 \
+    vendor.oplus.hardware.camera.slogan@1.0 \
     vendor.oplus.hardware.commondcs@1.0 \
     vendor.oplus.hardware.orms@1.0 \
     vendor.oplus.hardware.radio@1.0 \
     ImsService \
+    OppoCamera \
+    coloros-support-wrapper \
+    main-framework \
+    main-services \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
@@ -1200,6 +1385,9 @@ PRODUCT_PACKAGES += \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common \
+    oplus-framework \
+    oplus-services \
+    com.oppo.camera.unit.sdk \
     android.hardware.gpu@1.0-service.xml \
     android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml \
     manifest.xml \
@@ -1235,6 +1423,23 @@ PRODUCT_PACKAGES += \
     ipsec_mon \
     jpegtool \
     lbs_hidl_service \
+    lib3a.ccu.ddr \
+    lib3a.ccu.dm \
+    lib3a.ccu.pm \
+    libccu_gc02k0_mipi_raw.ddr \
+    libccu_gc02m0_mipi_mono.ddr \
+    libccu_gc2375h_mipi_raw_19661.ddr \
+    libccu_imx471_mipi_raw1.ddr \
+    libccu_imx682_mipi_raw.ddr \
+    libccu_ov02b10_mipi_raw.ddr \
+    libccu_ov02b1b_mipi_mono.ddr \
+    libccu_ov8856_mipi_raw.ddr \
+    libccu_s5k3p9sp_mipi_raw.ddr \
+    libccu_s5kgm1sp_mipi_raw.ddr \
+    libccu_s5kgw1_mipi_raw.ddr \
+    libccu_sala_wide_ov8856.ddr \
+    libccu_salaa_qtech_main_s5kgm1sp.ddr \
+    libccu_sarter_qtech_main_s5kgm1sp.ddr \
     mcDriverDaemon \
     mnld \
     mtk_agpsd \
